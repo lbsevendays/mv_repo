@@ -1,0 +1,30 @@
+# 数据为字典格式，优先读取version，如果version是local会读取path，如果不是local则path无效。
+# sh abtorw deps update 根据配置的DEPS.list，生成编译需要的DEPS.conf
+
+dep_dict = {
+  "main_version": "9.80.0",
+  "git_deps": [{
+    "git": "git@gitlab.alibaba-inc.com:ae86/GNaviInterface.git",
+    "tag": "",
+    "save_path": "../GNaviInterface"
+  },{
+    "git": "git@gitlab.alibaba-inc.com:mapdatadecoder/simple3dDataParser.git",
+    "tag": "",
+    "save_path": "./plugins/amap/map_simple3d/data_parser"
+  }],
+  "deps": [{
+      "name": "MagicMirror",
+      "version": "",
+      "path": ""
+    },
+    {
+      "name": "RoadLineRebuildAPI",
+      "version": "",
+      "path": ""
+    },
+    {
+      "name": "bmd",
+      "version": "",
+      "path": ""
+    }]
+}
